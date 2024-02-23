@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstap.css">
+</head>
+
+<body>
+  <!-- Hearder -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Gaming Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex ms-auto gap-3" role="search">
+          <select onchange="setgame()" id = "catogary" class="form-select" aria-label="Default select example">
+          </select>
+          <select  id="game"class="form-select" aria-label="Default select example">
+          </select>
+          <button  onclick="searchGame()"class="btn btn-outline-success" type="submit">Search</button>
+          <button  onclick="clearSearch()"class="btn btn-outline-danger" type="submit">Clear</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+
+  <div  class="row p-2" id="main">
+    </div>
+
+    <div   style="display: none;" class="card mb-3" id="game-detail">
+      
+    </div>
+
+  
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
